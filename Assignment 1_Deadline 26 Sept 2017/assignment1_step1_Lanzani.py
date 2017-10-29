@@ -1,0 +1,30 @@
+Aw=3*5
+T1=20
+T2=-10
+h1=10
+h2=25
+l=0.25
+A=l*1
+L1=0.03
+Lp1=0.02
+Lpc=0.16
+lpc=0.015
+lpb=0.22
+k1=0.026
+kp=0.22
+kb=0.72
+Rsi=1/(h1*A)
+Rse=1/(h2*A)
+R1=L1/(A*k1)
+Rp1=Lp1/(A*kp)
+Rp2=Rp1
+Rpc1=Lpc/(lpc*kp)
+Rpc2=Rpc1
+Rb=Lpc/(lpb*kb)
+invRp=1/Rpc1+1/Rpc2+1/Rb
+Rp=1/invRp
+RT=Rsi+Rse+R1+Rp1+Rp+Rp2
+print 'Rt is '+ str(RT)+ ' degC/W'
+Q=(T1-T2)/RT
+Qw=Q*(Aw/A)
+print 'Qw is '+ str(Qw)+ ' W'
