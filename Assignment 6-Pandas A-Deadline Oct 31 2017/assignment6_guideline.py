@@ -18,5 +18,3 @@ Resistances_DF["h"][Resistances_DF["type"]=="conv"]
 Resistances_DF["RValue"][Resistances_DF["type"]=="conv"]
 Resistances_DF["RValue"][Resistances_DF["type"]=="conv"]=1.0/Resistances_DF["h"][Resistances_DF["type"]=="conv"]
 Resistances_DF["RValue"][Resistances_DF["type"]=="cond"]=Resistances_DF["L"][Resistances_DF["type"]=="cond"]/Resistances_DF["k"][Resistances_DF["type"]=="cond"]
-
-
