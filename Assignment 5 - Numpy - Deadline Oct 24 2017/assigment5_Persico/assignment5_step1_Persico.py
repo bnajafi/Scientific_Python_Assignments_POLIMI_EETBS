@@ -1,4 +1,5 @@
 import numpy as np
+
 Resistanceinseries=np.array([])
 Longinseries=np.array([0.03,0.02,0.02])
 Kinseries=np.array([0.026,0.22,0.22])
