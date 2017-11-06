@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 os.chdir ("C:\Users\Fabio\Documents\Polimi\Magistrale\Buildings\Assignments\Assignment 7 Gardella")
 
-latitude_location = "40"
+latitude_location = "45"
 
 
 Beam_irradiance_DF = pd.read_csv("BeamIrradiance.csv",sep=";",index_col=0)
