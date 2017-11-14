@@ -7,22 +7,18 @@ print (wallcomposition)
 print ("***")
 tempvar=24
 area =(0.8*50*2.5)
-series= ["Outsidesur","WoodLapSiding","Woodfiberboard","GypsumWall","Insidesur"]
-parallel=["Glassfiberinsulation", "Woodstud"]
+series= ["Outsidesur","WoodLapSiding","Woodfiberboard","GypsumWall","Insidesur","Woodstud"]
+parallel=["Glassfiberinsulation","Outsidesur","WoodLapSiding","Woodfiberboard","GypsumWall","Insidesur"]
 def function (listA,listB,composition):
     r1=0
     for i in listA:
-        r1=r1+composition[i]["Rvalue"]
-    print ("rserie is ",r1) 
-    g2=r2=0
+        r1=r1+composition[i]["Rvalue"] 
+    r=0
     for j in listB:
-        g2=(g2+1/composition[j]["Rvalue"])
-        r2=1/g2
-    print ("rparal is ",r2)    
+        r=r+composition[j]["Rvalue"] 
     ratio=0.75
-    U=ratio*(1/r1)+(1-ratio)*(1/r2)
+    U=ratio*(1/r1)+(1-ratio)*(1/r)
     return U
-
 Ufactor= function (series,parallel,wallcomposition)
 print ("The overall heat transfer coefficient is ", Ufactor)
 print ("***")
