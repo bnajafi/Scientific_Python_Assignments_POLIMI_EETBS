@@ -2,7 +2,7 @@
 import os
 import pandas as pd
 import numpy as np
-os.chdir("C:/Users/behzad/Dropbox/_2_Teaching Activities/_0_EETBS- On-going/git_fork_clone/Scientific_Python_Assignments_POLIMI_EETBS/Assignment 7 Pandas B DeadLine Nov 8th 2017/__Guidelines__")
+os.chdir("C:\Users\Lorenzo\Desktop\git_fork_clone\Scientific_Python_Assignments_POLIMI_EETBS\Assignment 7 Pandas B DeadLine Nov 8th 2017\__Guidelines__")
 
 
 
