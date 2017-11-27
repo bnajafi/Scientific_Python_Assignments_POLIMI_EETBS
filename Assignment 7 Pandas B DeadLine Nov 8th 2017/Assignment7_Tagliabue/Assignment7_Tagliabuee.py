@@ -2,7 +2,7 @@
 import os 
 import numpy as np
 import pandas as pd
-os.chdir("/Users/camillatagliabue/Desktop/Assignment7_Tagliabue")
+os.chdir("/Users/camillatagliabue/Desktop/Scientific_Python_Assignments_POLIMI_EETBS/Assignment 8 Pandas C Deadline Nov 28th 2017/Assignment7_Tagliabue")
 beam_DF=pd.read_csv("BeamIrradiance.csv",sep=";",index_col=0)
 diffuse_DF=pd.read_csv("DiffuseIrradiance.csv",sep=";",index_col=0)
 windows_DF=pd.read_csv("windows.csv",sep=";",index_col=0)
