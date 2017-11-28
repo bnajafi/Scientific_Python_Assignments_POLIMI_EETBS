@@ -26,15 +26,17 @@ for index in windows_DF.index.tolist():
 windows_DF["PXI"]=PXI_values
 windows_DF.to_csv("windows_completed_withPXI.csv",sep=";")
 
-
-Latitude=42
-
-name_of_columns=DF_Ed.columns.get_values()
-name_of_columns_as_numbers = name_of_columns.astype(np.int32, copy=False)
-# for thedirection of South
-result_Ed=sp.interp(Latitude,name_of_columns_as_numbers,DF_Ed.loc["S"]) 
-name_of_columns=DF_ED.columns.get_values()
-name_of_columns_as_numbers = name_of_columns.astype(np.int32, copy=False)
-result_ED=sp.interp(Latitude,name_of_columns_as_numbers,DF_ED.loc["S"]) 
-PXI42=result_ED+result_Ed
-print "PXI latitude=42 is "+str(PXI42)
+#interpolation
+def PXI_finder_interp(latitude,direction):
+    DF_Ed=pd.read_csv("BeamIrradiance.csv",sep=";",index_col=0)
+    DF_ED=pd.read_csv("DiffuseIrradiance.csv",sep=";",index_col=0)
+    name_of_columns=DF_Ed.columns.get_values()
+    name_of_columns_as_numbers = name_of_columns.astype(np.int32, copy=False)
+    result_Ed=sp.interp(latitude,name_of_columns_as_numbers,DF_Ed.loc[direction]) 
+    name_of_columns=DF_ED.columns.get_values()
+    name_of_columns_as_numbers = name_of_columns.astype(np.int32, copy=False)
+    result_ED=sp.interp(latitude,name_of_columns_as_numbers,DF_ED.loc[direction]) 
+    PXI=result_Ed+result_ED 
+    return PXI
+    
+PXI_finder_interp(42,windows_DF["Direction"]["south-Fixed"])
