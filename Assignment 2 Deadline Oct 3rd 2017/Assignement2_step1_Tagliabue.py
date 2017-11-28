@@ -1,19 +1,17 @@
 #ASSIGNMENT 2 PART 1
-A=3*5
-Ap=(3.0/0.25*0.03)*5
-Ab=(3/0.25*0.22)*5
 RValue1=RValue2=RValue3=RValue4=RValue0=RValue5=0
+Awall=15 #m2
 Ti=20
-To=10
-R1=[A,0.03,0.026,RValue1] #foam: area lenght conductivity
-R2=[A,0.04,0.22,RValue2] #plaster V: area,lenght,conductivity
-R3=[Ap,0.16,0.22,RValue3] #plaster H: area,lenght,conductivity
-R4=[Ab,0.16,0.72,RValue4] #brick: area,lenght,conductivity
-R0=[A,1,10,RValue0]#indoor
-R5=[A,1,25,RValue5]#outdoor
+To=-10
+R1=[0.25,0.03,0.026,RValue1] #foam: area lenght conductivity
+R2=R6=[0.25,0.02,0.22,RValue2] #plaster V: area,lenght,conductivity
+R3=R7=[0.015,0.16,0.22,RValue3] #plaster H: area,lenght,conductivity
+R4=[0.22,0.16,0.72,RValue4] #brick: area,lenght,conductivity
+R0=[0.25,1,10,RValue0]#indoor
+R5=[0.25,1,25,RValue5]#outdoor0
 Allres=[R1,R2,R3,R4,R0,R5]
 print ("This are all the resistances",Allres)
-parallelres=[R3,R4]
+parallelres=[R3,R4,R7]
 gp=rp=0
 seriesres=[R1,R2]
 convres=[R0,R5]
@@ -35,3 +33,4 @@ print ("The equivalent total resistance is Req=", Req)
 #rate of heat tranfer
 Q=(Ti-To)/Req
 print ("The rate of heat transfer is Q=", Q)
+Qwall=Q*Awall/0.25

@@ -53,6 +53,3 @@ for anyelement in parallel:
 PARALLELL = 1/Rparal
 
 RTOT= PARALLELL + CONVENCTION + SERIES
-
-
-print"The amount of thermal resistence of the brick is "+str (RTOT)+" W"
