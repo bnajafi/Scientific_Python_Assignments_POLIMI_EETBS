@@ -6,22 +6,17 @@ wallcomposition = {"WoodLapSiding":{"Rvalue":0.14,"length":0.013},"Woodfiberboar
                    "Glassfiberinsulation":{"Rvalue":2.45,"length":0.025},"Woodstud":{"Rvalue":0.63,"length":0.090}}
 print (wallcomposition)
 print ("***")
-
-series= ["Outsidesur","WoodLapSiding","Woodfiberboard","GypsumWall","Insidesur"]
-parallel=["Glassfiberinsulation", "Woodstud"]
+series= ["Outsidesur","WoodLapSiding","Woodfiberboard","GypsumWall","Insidesur","Woodstud"]
+parallel=["Glassfiberinsulation","Outsidesur","WoodLapSiding","Woodfiberboard","GypsumWall","Insidesur"]
 ratio=0.75
 tempvar=24
 area =(0.8*50*2.5)
 convectionlayers=["Insidersur","Outsidesur"]
-res1=res2=G2=0.00
+res1=res2=0.00
 for anymat in series:
     res1=res1+wallcomposition[anymat]["Rvalue"]
-print ("the resistance in serie is:", res1)
-print ("***")
-
 for ANYMAT in parallel:
-    G2=G2+1/wallcomposition[ANYMAT]["Rvalue"]
-    res2=1/G2
+    res2=res2+wallcomposition[ANYMAT]["Rvalue"]
 print ("The Resistance in parallel is:",res2)
 print ("***")
 U= ratio*(1/res1)+(1-ratio)*(1/res2)
