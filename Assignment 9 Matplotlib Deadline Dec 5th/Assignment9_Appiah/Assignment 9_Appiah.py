@@ -26,8 +26,7 @@ U_new_Series=pd.Series(x)*0.01
 def Opaque_Qheating(U_new_Series):                         
     Qheating_wall_new =Qheating[0]*(U_new_Series/U_wall_old) 
     Overall_Qheating= Qheating_wall_new+Qheating[1]+Qheating[2] 
-    return Overall_Qheating
-    
+    return Overall_Qheating   
 Qheating_Series=U_new_Series.apply(Opaque_Qheating)
 
 # 2D plot Overall Qheating vs U value of external wall
