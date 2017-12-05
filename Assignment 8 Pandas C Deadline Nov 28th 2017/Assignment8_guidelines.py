@@ -4,6 +4,10 @@ import numpy as np
 import pandas as pd
 
 import scipy as sp # You need to import Scipy in order to interpolate
+<<<<<<< HEAD
+=======
+os.chdir ("C:\Users\Marica\Desktop\Scientific_Python_Assignments_POLIMI_EETBS\Assignment 7 Pandas B DeadLine Nov 8th 2017\__Guidelines__")
+>>>>>>> e8e2aea4950feb98812db6ca7d810de9ca3f764a
 
 
 #  the procedure to find the IAC_cl of all windows:
