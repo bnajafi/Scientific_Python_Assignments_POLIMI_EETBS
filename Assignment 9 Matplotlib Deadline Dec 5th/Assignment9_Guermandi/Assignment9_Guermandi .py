@@ -32,14 +32,24 @@ plt.pie(coolingLoad,labels=labels,colors=colors,explode=(0.1,0.1,0.1),autopct='%
 plt.title("Share of each opaque component in the total cooling load")
 plt.show()
 
-#if I change Uwall
-Unew=[0.28,1.694,0.25]
-U=[0.435,0.28]
-items=[1,2]
-Unew=pd.Series(Unew)
-HFnew=quandofafreddo*Unew
-heatingLoadnew = HFnew*seriearea
-heatingLoadValues=pd.Series([heatingLoad.sum(),heatingLoadnew.sum()])
-plt.figure(3)
-plt.bar(items,heatingLoadValues,color="b")
-plt.title("U_wall=0.435                          U_wall=0.28")
+def frange(start,stop,step):
+    i=start
+    while i<stop:
+        yield i
+        i+=step
+U=[]        
+for i in frange (0.2, 1.0, 0.02):
+    U.append(i)
+index=range(0,40) 
+heatingload=[]   
+for i in index:
+    Uwinter[0]=U[i]
+    quantosidisperde=pd.Series(Uwinter)
+    HF=quandofafreddo*quantosidisperde
+    heatingLoad = HF*seriearea
+    heatingload.append(heatingLoad.sum())
+plt.plot(U,heatingload)
+plt.show()
+plt.xlabel(" Values of U (from 0.2 to 1.0, step of 0.02")
+plt.ylabel(" Load value")
+plt.title(" Load values for several values of U")
