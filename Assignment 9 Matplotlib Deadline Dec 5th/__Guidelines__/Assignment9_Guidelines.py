@@ -53,7 +53,7 @@ plt.xticks(items,labels,color="r")
 # How to plot a pie chart !
 plt.close("all")
 plt.figure()
-plt.pie(HeatingLoadValues,labels=labels,colors=cols,startangle=90,explode=(0.1,0,0), autopct='%1.1f%%'))
+plt.pie(HeatingLoadValues,labels=labels,colors=cols,startangle=90,explode=(0.1,0,0), autopct='%1.1f%%')
 
 
        
