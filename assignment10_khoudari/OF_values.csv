@@ -1,0 +1,7 @@
+Surface Type;Surface ID;OFt;OFr
+Ceiling or wall adjacent to vented attic ;Ceiling_adjacent;0.62;-0.19
+Ceiling/roof assembly ;ceiling_assempbly;1.0;-0.36
+Wall (wood frame) or door with solar exposure;wall_exposed;1.0;-0.36
+Wall (wood frame) or door (shaded) 1 0 –0.36;wall_shaded;1.0;-0.36
+Floor over ambient;floor_over_ambient;1.0;-0.06
+Floor over crawlspace ;floor_over_crawlspace;1.0;-0.28

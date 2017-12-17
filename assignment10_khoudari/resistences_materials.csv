@@ -1,0 +1,33 @@
+Component;ID;Thickness;R
+Outside surface (winter);out_winter;;0.03
+Outside surface (summer);out_summer;;0.044
+Inside surface, still air;ins;;0.12
+Plane air space, vertical, ordinary surfaces (eeff     0,82):;air_space_13;13;0.16
+;air_space_20;20;0.17
+;air_space_40;40;0.16
+;air_space_90;90;0.16
+Insulation, 25 mm (1 in):;glass_fiber;25;0.7
+;mineral_fiber;25;0.66
+;urethane;25;0.98
+Stucco, 25 mm (1 in);stucco;25;0.037
+Face brick, 100 mm (4 in);face_brick;100;0.075
+Common brick, 100 mm (4 in);com_brick;100;0.12
+Steel siding;metal;;0
+Slag, 13 mm (21 in);slag;13;0.067
+Wood, 25 mm (1 in);wood;25;0.22
+Wood stud, nominal 2 in 4 in (3,5 in or 90 mm wide);wood_stud_2.4;90;0.63
+Wood stud, nominal 2 in   6 in (5,5 in or 140 mm wide);wood_stud_2.6;140;0.98
+Clay tile, 100 mm (4 in);tile;100;0.18
+Acoustic tile;acoustic_tile;200;0.32
+Asphalt shingle roofing;asphalt;200;0.077
+Building paper;paper;1;0.011
+Concrete block, 100 mm (4 in):;block_lightweight;100;0.27
+;block_heavyweight;100;0.13
+Plaster or gypsum board, 13 mm (21 in);gypsum;13;0.079
+Wood fiberboard, 13 mm (21 in);wood_fiber;13;0.23
+Plywood, 13 mm (21 in);plywood;13;0.11
+Concrete, 200 mm (8 in):;concrete_hightweight;200;1.17
+;concrete_heavyweight;200;0.12
+Cement mortar, 13 mm (1/2 in);cement;13;0.018
+Wood bevel lapped siding, 13 mm   200 mm (1/2 in   8 in);wood_bevel;13;0.14
+elastomeric coating;coating;2;0

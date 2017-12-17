@@ -1,0 +1,11 @@
+Duct Location;Conditioning_Type;Duct_factors
+Conditioned space;a;0.0
+Attic;C;1.26
+Attic;H/F;0.49
+Attic;H/HP;0.56
+Basement;C;0.12
+Basement;H/F;0.28
+Basement;H/HP;0.23
+Crawlspace;C;0.16
+Crawlspace;H/F;0.49
+Crawlspace;H/HP;0.56

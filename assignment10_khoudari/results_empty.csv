@@ -1,0 +1,9 @@
+Loads;Heating;Cooling
+Q_opaque;0;0
+Q_windows;0;0
+Q_below;0;0
+Q_internalGain;0;0
+Q_infiltVentilation;0;0
+Q_distribLosses;0;0
+Q_sensible_tot;0;0
+Q_latent;0;0

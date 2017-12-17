@@ -1,0 +1,9 @@
+Name;Type;Area Percentage;material ID;lenght;Rvalue
+R0_winter;conv;1;out_winter;;0.0000001
+R1;cond;1;wood_bevel;13;0.0000001
+R2;cond;1;wood_fiber;13;0.0000001
+R3;cond;1;com_brick;100;0.0000001
+R4;cond;0.7;glass_fiber;90;0.0000001
+R5;cond;0.3;wood_stud_2.4;90;0.0000001
+R6;cond;1;gypsum;13;0.0000001
+Ri;conv;1;ins;;0.0000001
