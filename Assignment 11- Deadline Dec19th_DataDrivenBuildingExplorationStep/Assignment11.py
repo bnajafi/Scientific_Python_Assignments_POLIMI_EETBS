@@ -17,12 +17,7 @@ DF_JulyfirstTillthird.head(5)
 DF_JulyfirstTillthird.describe()
 # In[48]:
 
-plt.figure()
-plt.plot(DF_JulyfirstTillthird)
-DF_JulyfirstTillthird.plot()
-plt.xlabel('Time')
-plt.ylabel('AC Power [W]')
-plt.show()
+
 
 
 # Now let's import some weather data!
