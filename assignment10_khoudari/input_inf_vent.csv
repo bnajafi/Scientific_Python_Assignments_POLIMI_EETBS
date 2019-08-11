@@ -1,0 +1,23 @@
+;Value
+Volume [m3];385
+Exposed Surface Area [m2];279
+Type of construction [-];Average
+Design condition [Cooling/Heating];boh
+Average Stack Height [m];2.5
+Outdoor Temperature , HEATING [ÁC];-4.8
+Outdoor Temperature, COOLING [ÁC];31.9
+Effective Leakage Area [cm2];0
+Building conditioned floor area [m2];154
+Number of bedrooms [-];2
+Ventilation supply air floor rate [l/s];0
+Ventilation exhaust air floor rate [l/s];0
+Air sensible heat factor_Cs [W/l*s*K];1.23
+HRV/ERV Sensible effectiveness [-];0
+Balanced ventilation flow rate [l/s];0
+Other balanced ventilation supply flow rate [l/s];0
+HRV/ERV [y/n];ciao
+Air latent heat factor_Cl [W/l*s];3010
+Indoor/Outdoor humidity ratio difference [kg/kg];0.0039
+Air total heat factor_Ct [W/l*s];1.2
+HRV/ERV total  effectiveness [-];0
+Indoor/Outdoor enthalpy difference [kJ/kg];0

@@ -1,0 +1,7 @@
+;Type the desired option 
+Duct Location;Attic
+Insulation [m2.K/W];1.4
+Suppy/Return Leakage;5
+Cooling Conditioning Type;C
+Heating Conditioning Type;H/HP
+Number of Stories;1

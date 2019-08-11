@@ -1,0 +1,10 @@
+data;value
+U_ceiling;0.3
+height_house;2.5
+A_floor;154
+A_ceiling;154
+h_door;2.2
+height_windows;1.8
+width_windowsE;3
+width_windowsW;2.5
+width_windowsS;3

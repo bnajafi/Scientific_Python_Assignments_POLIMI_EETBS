@@ -1,0 +1,4 @@
+Name;Type;Area Percentage;material ID;lenght;Rvalue
+R0_summer;conv;1;out_summer;;0.0000001
+Rdoor;cond;1;wood;50;0.0000001
+Ri;conv;1;ins;;0.0000001

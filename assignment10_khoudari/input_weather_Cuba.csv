@@ -1,0 +1,11 @@
+Inputs;Values
+Design Heating T;20
+Design Cooling T;24
+Design Cooling RH;0.5
+Summer T;31.3
+Summer WBT;25.7
+Winter T;19.2
+DR;6.6
+Latitude;20
+Ground T;20
+Ground T Amplitude;0
